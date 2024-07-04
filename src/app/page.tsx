@@ -13,10 +13,10 @@ export default function Home() {
 
 const Navbar = () => {
   return(
-    <nav className="sticky z-[100] top-0 bg-white left-0 min-w-[100cvw] py-2 shadow-md grid md:grid-cols-2 font-[400] text-sm lg:text-md">
+    <nav className="sticky z-[100] top-0 bg-white left-0 min-w-[100cvw] py-4 shadow-md grid md:grid-cols-2 font-[400] text-sm lg:text-md">
         
 
-        <div className="flex   lg:flex-nowrap items-center justify-self-start pl-4 gap-4 [&>*]:flex [&>*]:whitespace-nowrap">
+        <div className="flex  lg:flex-nowrap items-center justify-self-start pl-8 gap-4 [&>*]:flex [&>*]:whitespace-nowrap">
         <svg
     width={126}
     height={45}
@@ -24,6 +24,7 @@ const Navbar = () => {
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    className="w-40 h-auto"
   >
     <path fill="url(#a)" d="M0 .5h126v44H0z" />
     <defs>
@@ -44,7 +45,7 @@ const Navbar = () => {
     </defs>
   </svg>
 
-    <div className="flex flex-nowrap items-center justify-self-start pl-4 gap-4 [&>*]:flex [&>*]:whitespace-nowrap">
+    <div className="flex flex-nowrap items-center justify-self-start pl-4 gap-4 [&>*]:flex [&>*]:whitespace-nowrap text-lg">
     <button>Services 
       
 
@@ -58,8 +59,8 @@ const Navbar = () => {
         </button>
     </div>
         </div>
-        <div className="flex items-center gap-8 justify-self-end pr-10 ">
-          <button className=" bg-yellow-500 rounded-full px-4 py-2">Meet Your CxO</button>
+        <div className="flex items-center gap-8 justify-self-end pr-10  ">
+          <button className=" bg-[#FAA500] rounded-full px-4 py-2 text-lg">Meet Your CxO</button>
         </div>
 
     </nav>
@@ -71,20 +72,20 @@ return(
   <div className="w-[100cvw] h-[90vh] relative bg-gradient-to-t from-[#FDF3D9] to-[#FFFFFF] z-[2] flex items-center justify-center flex-col">
       <Image src="/images/cross.svg" width={60} height={60} alt="cross" className="absolute top-40 right-0"  />
       <Image src="/images/hero1circle.svg" width={60} height={60} alt="circle 1" className="absolute top-0 left-0"  />
-      <Image src="/images/hero1circle2.svg" width={100} height={100} alt="circle 2" className="absolute bottom-12 right-1/2 transform translate-x-1/2"  />
+      <Image src="/images/hero1circle2.svg" width={100} height={100} alt="circle 2" className="absolute bottom-18 right-1/2 transform translate-x-1/2"  />
       <div className="absolute w-[50vw] h-[10vw] absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 ">
       <Image src="/images/businesses.svg" fill alt="businesses"  />
       </div>
-      <span className="bg-gradient-to-r from-[#065D75] to-[#065D75]/85 bg-clip-text text-transparent font-bold text-4xl text-center z-[10]">
-      Skip the suits! Access <br/>Consulting at $30/hour
+      <span className="bg-gradient-to-r from-[#065D75] to-[#065D75]/85 bg-clip-text text-transparent font-semibold text-[5rem] leading-tight text-center z-[10]">
+      Skip the <span className="bg-gradient-to-r text-[#065D75] from-[#EBC43D] to-[#FFD18F]">suits!</span> Access <br/>Consulting at  <span className="bg-gradient-to-r text-[#065D75] from-[#EBC43D] to-[#FFD18F]">$30/hour</span>
       </span>
-      <span className="max-w-[500px] z-[10] text-center">
-      Your CxO Online is a new-age global platform that provides on-demand online consulting services tailored to your business needs to help you succeed. 
+      <span className="z-[10] text-center pt-8 text-2xl">
+      Your CxO Online is a new-age global platform that provides on-demand online<br/> consulting services tailored to your business needs to help you succeed.<br/>
       Are you ready to unlock your business potential?
       </span>
-      <div className="flex items-center gap-4 mt-8">
-      <button className="bg-gradient-to-r from-[#065D75] to-[#065D75]/85 rounded px-4 py-2 text-white font-bold ">Schedule a meeting</button>
-      
+      <div className="flex items-center gap-4 mt-8 text-2xl">
+      <button className="bg-gradient-to-r from-[#065D75] to-[#065D75]/85 rounded px-4 py-2 text-white">Schedule a meeting</button>
+      <button className="bg-gradient-to-r from-[#EBC43D] to-[#FFD18F]/85 rounded px-4 py-2 text-[#065D75] ">Explore our services</button>
       </div>
   </div>
 )
@@ -92,8 +93,8 @@ return(
 
 const WhyChoose = () =>{
   return(
-    <div className="w-[100cvw] h-[100vh]  relative bg-white">
-
+    <div className="w-[100cvw] h-[100vh]  relative bg-white mt-10">
+      <Image src="/images/section3.svg" fill alt="section 3" className="absolute top-0 left-0"  />
     </div>
   )
 }
